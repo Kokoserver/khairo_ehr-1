@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = {extras = ["all"], version = "*"}
+python-dotenv = "*"
+mongoengine = "*"
+passlib = {extras = ["bcrypts"], version = "*"}
+bcrypt = "*"
+httpx = "*"
+
+[scripts]
+server = "python run.py"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
